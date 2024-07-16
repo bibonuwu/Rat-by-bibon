@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\bibon\\Desktop\\WpfApp4\\",
+  "WorkspaceRootPath": "C:\\Users\\uwu\\Desktop\\Rat-by-bibon\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3D677454-E790-4834-A8BF-A71D891966E1}|WpfApp4\\WpfApp4.csproj|C:\\Users\\bibon\\Desktop\\WpfApp4\\wpfapp4\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3D677454-E790-4834-A8BF-A71D891966E1}|WpfApp4\\WpfApp4.csproj|c:\\users\\uwu\\desktop\\rat-by-bibon\\wpfapp4\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3D677454-E790-4834-A8BF-A71D891966E1}|WpfApp4\\WpfApp4.csproj|solutionrelative:wpfapp4\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3D677454-E790-4834-A8BF-A71D891966E1}|WpfApp4\\WpfApp4.csproj|c:\\users\\bibon\\desktop\\wpfapp4\\wpfapp4\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{3D677454-E790-4834-A8BF-A71D891966E1}|WpfApp4\\WpfApp4.csproj|C:\\Users\\uwu\\Desktop\\Rat-by-bibon\\wpfapp4\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{3D677454-E790-4834-A8BF-A71D891966E1}|WpfApp4\\WpfApp4.csproj|solutionrelative:wpfapp4\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
@@ -24,23 +24,22 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\bibon\\Desktop\\WpfApp4\\WpfApp4\\MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\uwu\\Desktop\\Rat-by-bibon\\WpfApp4\\MainWindow.xaml",
               "RelativeDocumentMoniker": "WpfApp4\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\bibon\\Desktop\\WpfApp4\\WpfApp4\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\uwu\\Desktop\\Rat-by-bibon\\WpfApp4\\MainWindow.xaml",
               "RelativeToolTip": "WpfApp4\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-27T08:04:15.147Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-27T08:04:15.147Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\bibon\\Desktop\\WpfApp4\\WpfApp4\\MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\uwu\\Desktop\\Rat-by-bibon\\WpfApp4\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "WpfApp4\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\bibon\\Desktop\\WpfApp4\\WpfApp4\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\uwu\\Desktop\\Rat-by-bibon\\WpfApp4\\MainWindow.xaml.cs",
               "RelativeToolTip": "WpfApp4\\MainWindow.xaml.cs",
-              "ViewState": "AQIAAJYAAAAAAAAAAAA7wKMAAAAkAAAA",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAcwA4AAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-27T08:04:14.758Z",
               "EditorCaption": ""

