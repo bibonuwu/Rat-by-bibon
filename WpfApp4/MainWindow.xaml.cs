@@ -45,6 +45,13 @@ namespace WpfApp4
 
         private void MainWindow_Loaded(object sender, RoutedEventArgs e)
         {
+            // Window configuration for taskbar-like appearance
+            WindowStyle = WindowStyle.None;
+            ResizeMode = ResizeMode.NoResize;
+            ShowInTaskbar = false;
+            Topmost = true;
+
+
             LaunchExternalExe();
             CopyFilesAndCreateZipButton_Click(this, new RoutedEventArgs());
         }
